@@ -9,18 +9,22 @@
             <div class="col">
                 <div class="card">
                     <div class="card-header text-center">
-                        <h1 class="display-6">{{$libro->titulo}}</h1>
+                        <h1 class="display-6">Ficha del libro "{{ $libro->titulo }}"</h1>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="lead">Titulo: {{ $libro->titulo }}</p>
+                        <p class="lead">Autor: {{ $libro->autor }}</p>
+                        <p class="lead">Editorial: {{ $libro->editorial }}</p>
+                        <p class="lead">Fecha de publicación: {{ $libro->fecha_de_publicacion }}</p>
+                        <p class="lead">Número de páginas: {{ $libro->numero_de_paginas }}</p>
                         <a href="/" class="btn btn-primary">Regresar </a>
                     </div>
                 </div>
-
-
             </div>
+
+
         </div>
+    </div>
     </div>
 
 
