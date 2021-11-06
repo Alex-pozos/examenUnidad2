@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LibrosController;
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', LibrosController::class);
+Route::get('/', WelcomeController::class);
+
+Route::get('mostrar/{id}', [LibrosController::class, 'mostrar'])->name('mostrar.mostrar');

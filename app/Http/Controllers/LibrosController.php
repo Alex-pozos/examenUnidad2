@@ -7,12 +7,12 @@ use Illuminate\Http\Request;
 
 class LibrosController extends Controller
 {
-    
-    public function __invoke(){
 
-        $libros = Libros::paginate(10);
+    public function mostrar($id){
 
-        return view('welcome', compact('libros'));
+        $libro = Libros::find($id);
+
+        return view('mostrar.mostrar', compact('libro'));        
 
     }
 
