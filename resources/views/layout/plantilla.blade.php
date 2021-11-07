@@ -19,7 +19,7 @@
     <title>@yield('titulo')</title>
 </head>
 
-<body style="background:rgb(47, 0, 70)">
+<body @yield('fondo')>
 
     @yield('contenido')
 

@@ -15,6 +15,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', WelcomeController::class);
+Route::get('/', WelcomeController::class)->name('index');
 
 Route::get('mostrar/{id}', [LibrosController::class, 'mostrar'])->name('mostrar.mostrar');
+
+Route::get('crear', [LibrosController::class, 'crear'])->name('mostrar.crear');
+
+Route::post('crear_libro', [LibrosController::class, 'store'])->name('mostrar.store');
+
+Route::get('mostrar/{libro}/editar', [LibrosController::class, 'editar'])->name('mostrar.editar');
+
+Route::put('mostrar/{libro}', [LibrosController::class, 'actualizar'])->name('mostrar.actualizar');
+
+Route::delete('mostrar/{libro}', [LibrosController::class, 'eliminar'])->name('mostrar.eliminar');

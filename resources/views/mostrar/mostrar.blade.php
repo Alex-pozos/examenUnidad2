@@ -17,7 +17,7 @@
                         <p class="lead">Editorial: {{ $libro->editorial }}</p>
                         <p class="lead">Fecha de publicación: {{ $libro->fecha_de_publicacion }}</p>
                         <p class="lead">Número de páginas: {{ $libro->numero_de_paginas }}</p>
-                        <a href="/" class="btn btn-primary">Regresar </a>
+                        <a href="/" class="btn btn-primary"><i class="fas fa-chevron-left"></i> Regresar a libros</a>
                     </div>
                 </div>
             </div>
