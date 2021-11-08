@@ -15,8 +15,8 @@
                     <h1 class="display-5 text-center" style="color:white">Lista de Libros</h1>
                     <div class="container">
                         <div class="row m-3">
-                            <div class="col-sm-3"><a href="{{ route('mostrar.crear') }}" class="btn btn-success btn-lg"><i
-                                        class="fas fa-plus"></i> Agregar registro</a></div>
+                            <div class="col-sm-3"><a href="{{ route('mostrar.crear') }}"
+                                    class="btn btn-success btn-lg"><i class="fas fa-plus"></i> Agregar registro</a></div>
                             <div class="col-sm-4"></div>
                             <div class="col-sm-3">{{ $libros->links() }}</div>
                             <div class="col-sm-2">
@@ -49,20 +49,20 @@
                                     <td>{{ $libro->numero_de_paginas }}</td>
                                     <td>
                                         <a href="{{ route('mostrar.mostrar', $libro->id) }}" class="btn btn-success">
-                                            <i class="far fa-eye"></i> 
+                                            <i class="far fa-eye"></i>
                                         </a>
                                     </td>
                                     <td>
-                                        <a href="{{ route('mostrar.editar', $libro->id)}}" class="btn btn-warning">
-                                            <i class="far fa-edit"></i> 
+                                        <a href="{{ route('mostrar.editar', $libro->id) }}" class="btn btn-warning">
+                                            <i class="far fa-edit"></i>
                                         </a>
                                     </td>
                                     <td>
-                                        <form action="{{route('mostrar.eliminar', $libro)}}" method="post">
+                                        <form action="{{ route('mostrar.eliminar', $libro) }}" method="post">
                                             @csrf
                                             @method('delete')
                                             <button type="submit" class="btn btn-danger">
-                                                <i class="far fa-trash-alt"></i> 
+                                                <i class="far fa-trash-alt"></i>
                                             </button>
                                         </form>
                                     </td>
