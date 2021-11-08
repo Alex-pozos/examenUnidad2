@@ -12,7 +12,7 @@
             <div class="row m-3">
                 <div class="col">
 
-                    <h1 class="display-5 text-center" style="color:white">Lista de Libros</h1>
+                    <h1 class="display-5 text-center" style="color:deepskyblue">Lista de Libros <i class="fas fa-book"></i></h1>
                     <div class="container">
                         <div class="row m-3">
                             <div class="col-sm-3"><a href="{{ route('mostrar.crear') }}"
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                     </div>
-                    <table class="table clase_table text-center" style="color:aqua">
+                    <table class="table clase_table text-center" style="color:deepskyblue">
                         <thead>
                             <tr>
                                 <th scope="col">Id</th>
