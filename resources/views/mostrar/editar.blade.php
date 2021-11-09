@@ -43,7 +43,7 @@
                         <br>
                         <div class="row">
                             <div class="col-sm-6">
-                                <button type="submit" class="btn btn-secondary"><i class="fas fa-cloud-upload-alt"></i>
+                                <button type="submit" class="btn btn-secondary"><i class="far fa-edit"></i>
                                     Actualizar</button>
                             </div>
                             <div class="col-sm-6">
